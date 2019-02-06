@@ -1,4 +1,4 @@
-# The starter clean theme for WordPress based [_S](https://underscores.me/)
+# The starter clean theme for WordPress based on [_S](https://underscores.me/)
 
 ### Instalation
 
