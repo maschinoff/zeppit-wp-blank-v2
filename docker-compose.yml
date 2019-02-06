@@ -1,0 +1,25 @@
+version: '3'
+services:
+   db:
+     image: mariadb:latest
+     volumes:
+       - db_data:/var/lib/mysql
+       - ./db_data/latest.sql:/docker-entrypoint-initdb.d/latest.sql
+     restart: always
+     env_file: .env
+     ports:
+      - "3307:3307"
+   wordpress:
+     depends_on:
+       - db
+     image: zeppit/wordpress-theme-dev
+     env_file: .env
+     ports:
+       - "8888:80"
+     restart: always
+     volumes:
+       - ./wp-content/:/var/www/html/wp-content
+       - .htaccess:/var/www/html/.htaccess
+volumes:
+    db_data:
+
