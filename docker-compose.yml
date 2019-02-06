@@ -4,7 +4,7 @@ services:
      image: mariadb:latest
      volumes:
        - db_data:/var/lib/mysql
-       - ./db_data/latest.sql:/docker-entrypoint-initdb.d/latest.sql
+       #- ./db_data/latest.sql:/docker-entrypoint-initdb.d/latest.sql
      restart: always
      env_file: .env
      ports:
@@ -19,7 +19,7 @@ services:
      restart: always
      volumes:
        - ./wp-content/:/var/www/html/wp-content
-       - .htaccess:/var/www/html/.htaccess
+       #- .htaccess:/var/www/html/.htaccess
 volumes:
     db_data:
 

@@ -11,6 +11,13 @@
 # track readme.md in the root (i.e. do NOT ignore it)
 !readme.md
 
+# track docker-compose in the root (i.e. do NOT ignore it)
+!docker-compose.yml
+
+# track docker-compose env in the root (i.e. do NOT ignore it)
+!.env
+
+
 # ignore all files that start with ~
 ~*
 
@@ -51,10 +58,4 @@ wp-content/themes/twenty*/
 
 # ignore node/grunt dependency directories
 node_modules/
-
-# track docker-compose in the root (i.e. do NOT ignore it)
-!docker-compose.yml
-
-# track docker-compose env in the root (i.e. do NOT ignore it)
-!.env
 
