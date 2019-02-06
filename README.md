@@ -1,4 +1,4 @@
-# The start clean theme for WordPress
+# The starter clean theme for WordPress based [_S](https://underscores.me/)
 
 ### Instalation
 
@@ -18,4 +18,3 @@ docker-compose.yml
 ```$xslt
 http://127.0.0.1:8888
 ``` 
-
