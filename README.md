@@ -22,28 +22,32 @@ http://127.0.0.1:8888
 ``` 
 
 ### PHPStorm - XDebug configurations
-1. The first thing you should do is to check your Debug settings.
+1. __The first thing you should do is to check your Debug settings.__
 
 PhpStorm -> Preferences -> Languages and Frameworks -> PHP -> Debug
 
 Make sure you have the same port that you have configured previously in "XDEBUG_CONFIG" environment variable: 9001 by default.
+
 Uncheck the next checkbox (we need to debug only our theme not WordPress):
  - Force break at first line when no path mapping specified
 
 Click "Apply" to save your configurations.
 
-2. The second we need to enable DBGp proxy in PhpStorm
+2. __The second we need to enable DBGp proxy in PhpStorm__
 
 PhpStorm -> Preferences -> Languages and Frameworks -> PHP -> Debug -> DBGp Proxy
+
 And configure it:
+
 It should match the value you have defined in your "XDEBUG_CONFIG" environment variable.
+
 - IDE key: PHPSTORM
 - HOST: docker.for.mac.localhost
 - PORT: 9001
 
 Click "Apply" to save your configurations.
 
-3. Then we need to configure a server. This is how PhpStorm will map the file paths in your local system to the ones in your container.
+3. __Then we need to configure a server. This is how PhpStorm will map the file paths in your local system to the ones in your container.__
 
 PhpStorm -> Preferences -> Languages and Frameworks -> PHP -> Servers
 
@@ -55,7 +59,7 @@ In the "Use path mapping" section you have to map the root path of your WordPres
 
 Click "Apply" to save your configurations.
 
-4. Now it is time to configure the remote debugger for your project.
+4. __Now it is time to configure the remote debugger for your project.__
 
 Run -> Edit Configurations...
 
