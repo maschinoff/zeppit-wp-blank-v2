@@ -1,4 +1,4 @@
-# The starter clean theme for WordPress
+# The starter clean theme for WordPress based on [_S](https://underscores.me/)
 
 This was tested on the macOS Mojave 10.14.2 with PHPStorm 2018.1.6 and latest versions of [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/). Some things might work a little different in other Operating Systems.
 
@@ -75,3 +75,4 @@ Your IDE should be now correctly configured.
 3. Open in your browser http://127.0.0.1:8888
 
 If you did everything well you should see the execution stop at your breakpoint.
+
